@@ -28,7 +28,6 @@
         <input
           type="text"
           class="form-control"
-          name="name"
           id="name"
           placeholder="Email"
         />
@@ -36,8 +35,8 @@
         <input
           type="text"
           class="form-control"
-          name="desc"
-          id="desc"
+          
+          id="password"
           placeholder="password"
         />
         <br />
@@ -50,7 +49,20 @@
       <br />
       
     </div>
+    <script>
+      const button=document.getElementById('login');
+      button.addEventListener('click',function onClick(e){
+  
+        const username=document.getElementById('name');
+        const password=document.getElementById('password');
+        const usernameValue=username.value;
+        const PasswordValue=password.value;
+        console.log(usernameValue,PasswordValue);
+        
+      })
+      
     
+    </script>
    
 
   </body>
